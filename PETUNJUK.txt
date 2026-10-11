@@ -1,0 +1,41 @@
+UNDANGAN PERNIKAHAN DIGITAL — PETUNJUK PENGEDITAN
+
+File:
+- index.html : isi teks, nama, tanggal, jam, nama orang tua, alamat acara.
+- style.css  : warna, font, jarak, tata letak.
+- script.js  : hitung mundur, musik, RSVP WhatsApp, nama tamu, Google Maps.
+- Foto mempelai dapat dipilih melalui bagian “Personalisasi Mempelai” untuk pratinjau di browser. Untuk ditampilkan kepada semua tamu, letakkan foto1.jpg sampai foto4.jpg dan foto pasangan di folder website.
+- musik.mp3 : letakkan file musik yang Anda punya izin untuk gunakan.
+
+WAJIB DIEDIT SEBELUM DIPUBLIKASIKAN:
+1. Buka index.html dan ganti Alya, Arkan, nama orang tua, tanggal, waktu, dan lokasi.
+2. Di script.js, ubah WHATSAPP_NUMBER menjadi nomor penerima RSVP. Pakai kode negara dan angka saja, contoh 6281234567890.
+3. Ubah weddingDate di script.js agar sama dengan tanggal acara.
+4. Ubah URL Google Maps pada bagian akhir script.js dan href awal di index.html ke lokasi acara sebenarnya.
+5. Tambahkan foto1.jpg, foto2.jpg, foto3.jpg, foto4.jpg, dan musik.mp3 ke folder yang sama. File musik opsional, gunakan musik yang hak penggunaannya Anda miliki.
+6. Buka index.html di browser untuk memeriksa hasilnya. Pada bagian Personalisasi Mempelai, masukkan nama dan pilih foto masing-masing pasangan lalu klik Terapkan Perubahan. Pengaturan tersebut tersimpan lokal di browser untuk pratinjau; agar foto muncul bagi semua pengunjung, sertakan file foto dalam website sebelum mengunggahnya.
+
+CATATAN RSVP:
+Form RSVP ini menyiapkan pesan lalu membuka WhatsApp. Jawaban tidak tersimpan otomatis di website/database. Jika ingin daftar RSVP tersimpan online, perlu integrasi layanan backend/form tambahan.
+
+CARA MEMPUBLIKASIKAN GRATIS DENGAN GITHUB PAGES:
+1. Buat akun di github.com dan buat repository baru, misalnya undangan-alyarkan.
+2. Unggah index.html, style.css, script.js, foto-foto, dan musik.mp3 (jika digunakan).
+3. Di repository, buka Settings > Pages.
+4. Pada Build and deployment, pilih Deploy from a branch, pilih branch main dan folder / (root), lalu Save.
+5. Setelah proses selesai, GitHub menampilkan URL seperti https://username.github.io/undangan-alyarkan/.
+6. Bagikan URL tersebut melalui WhatsApp. Untuk nama tamu, gunakan contoh URL:
+   https://username.github.io/undangan-alyarkan/?to=Bapak%20Andi
+
+Catatan: Google Fonts memerlukan internet. Jika ingin seluruh desain benar-benar offline, ganti font eksternal di index.html dengan font sistem.
+
+FITUR BARU — MEMBUAT TAUTAN PERSONAL UNTUK BANYAK TAMU:
+1. Publikasikan website utama terlebih dahulu, misalnya melalui GitHub Pages.
+2. Unggah juga file generator-tamu.html ke hosting yang sama.
+3. Buka https://username.github.io/nama-repository/generator-tamu.html (sesuaikan URL Anda).
+4. Tempel URL website undangan utama, misalnya https://username.github.io/nama-repository/
+5. Masukkan daftar nama, satu nama per baris, lalu tekan "Buat Tautan Personal".
+6. Salin semua tautan atau unduh CSV/TXT. CSV dapat dibuka di Excel atau Google Sheets.
+7. Bagikan tautan yang sesuai ke setiap tamu. Nama akan tampil di sampul melalui parameter ?to=.
+
+Generator hanya membuat tautan personal; nama tidak disimpan di server. Siapa pun yang memiliki tautan dapat membukanya.
